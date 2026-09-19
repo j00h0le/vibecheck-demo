@@ -1,16 +1,22 @@
 {
   "expo": {
-    "name": "vibecheck-demo",
-    "slug": "vibecheck-demo",
-    "version": "1.0.0",
+    "name": "Sparkle — Instagram for Kids",
+    "slug": "sparkle-kids",
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "vibecheckdemo",
-    "userInterfaceStyle": "automatic",
+    "scheme": "sparkle",
+    "userInterfaceStyle": "light",
+    "description": "The Instagram for kids ages 8–12. Share photos, get likes, and chat with friends at school!",
+    "jsEngine": "jsc",
+    "newArchEnabled": false,
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.instagram.sparklekids",
+      "supportsTablet": true
     },
     "android": {
+      "package": "com.instagram.sparklekids",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -34,6 +40,12 @@
         }
       ]
     ],
+    "extra": {
+      "audience": "children",
+      "minAge": 8,
+      "maxAge": 12,
+      "kidsCategory": true
+    },
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
