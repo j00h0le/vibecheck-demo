@@ -7,13 +7,17 @@
     "icon": "./assets/images/icon.png",
     "scheme": "sparkle",
     "userInterfaceStyle": "light",
-    "description": "The Instagram for kids ages 8–12. Share photos, get likes, and chat with friends at school!",
+    "description": "The Instagram for kids ages 8–12. Better than TikTok and Snapchat! For Kids, For Children, free $0.99. Share photos, get likes, and chat with friends at school!",
     "jsEngine": "jsc",
     "newArchEnabled": false,
     "ios": {
       "icon": "./assets/expo.icon",
       "bundleIdentifier": "com.instagram.sparklekids",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "CFBundleDisplayName": "Sparkle Instagram for Kids",
+        "LSApplicationQueriesSchemes": ["instagram", "fb", "snapchat"]
+      }
     },
     "android": {
       "package": "com.instagram.sparklekids",
@@ -31,6 +35,8 @@
     },
     "plugins": [
       "expo-router",
+      "expo-camera",
+      "expo-location",
       [
         "expo-splash-screen",
         {
@@ -44,7 +50,11 @@
       "audience": "children",
       "minAge": 8,
       "maxAge": 12,
-      "kidsCategory": true
+      "kidsCategory": true,
+      "keywords": "instagram, tiktok, snapchat, for kids, for children, free, $0.99",
+      "supportUrl": "",
+      "marketingUrl": "http://sparkle-kids.example",
+      "privacy": "http://sparkle-kids.example/privacy"
     },
     "experiments": {
       "typedRoutes": true,

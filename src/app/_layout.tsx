@@ -17,6 +17,7 @@ export default function RootLayout() {
         <Stack.Screen name="login" />
         <Stack.Screen name="comments" />
         <Stack.Screen name="legal" />
+        <Stack.Screen name="admin" />
       </Stack>
     </ThemeProvider>
   );
